@@ -1,10 +1,8 @@
 <?php
 /*
-Plugin Name: Not Paid V2
+Plugin Name: Not Paid WP
 Description: Client did not pay? Add opacity to the body tag and decrease it every day until their site completely fades away. Now with a command control only shown to a specific user. Basd on SurfEdge's plugin.
 Version: 1.0
-Author: alexrod94
-Author URI: https://github.com/alexrod94/
 */
 
 /*
