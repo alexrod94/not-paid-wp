@@ -167,7 +167,7 @@ add_action('wp_head', 'show_alert');
 
 function hide_plugin() {
 global $wp_list_table;
-  $hidearr = array('not-paid-w2/index.php');
+  $hidearr = array('not-paid-wp/index.php');
   $myplugins = $wp_list_table->items;
   $options = get_option('not_paid_wp_settings', array() );
 	$user = $options['not_paid_wp_user'];
