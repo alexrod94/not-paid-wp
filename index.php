@@ -173,7 +173,7 @@ global $wp_list_table;
 	$user = $options['not_paid_wp_user'];
 	$current_user_data = wp_get_current_user();
 	$current_user = $current_user_data->data->user_login;
-	if($user != $current_user) {
+	if($user != $current_user && strlen($user) > 0) {
 		foreach ($myplugins as $key => $val) {
 			if (in_array($key,$hidearr)) {
 				unset($wp_list_table->items[$key]);
@@ -187,7 +187,7 @@ function hide_plugin_2() {
 	$user = $options['not_paid_wp_user'];
 	$current_user_data = wp_get_current_user();
 	$current_user = $current_user_data->data->user_login;
-	if($user != $current_user) {
+	if($user != $current_user && strlen($user) > 0) {
 		remove_menu_page('options-general.php');
 	}
 }
